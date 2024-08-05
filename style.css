@@ -1,0 +1,128 @@
+
+.container {
+    border: 2px solid black;
+    display: grid;
+    background-color: rgb(235, 235, 235);
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+
+.container__item {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 15px;
+    background-color: rgb(189, 189, 189);
+    width: 25%;
+    height: 50px;
+}
+
+.container__item--right {
+    justify-self: end;
+}
+
+.box {
+    border: 2px solid black;
+    display: grid;
+    background-color: rgb(235, 235, 235);
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+
+.box__item {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 15px;
+    background-color: rgb(189, 189, 189);
+    width: 25%;
+    height: 50px;
+}
+
+.right {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+}
+
+.box__item--right {
+    justify-self: end;
+}
+
+.wrapper {
+    border: 2px solid black;
+    display: grid;
+    background-color: rgb(235, 235, 235);
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.wrapper__item {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 15px;
+    background-color: rgb(189, 189, 189);
+    width: 25%;
+    height: 50px;
+}
+
+.content {
+    border: 2px solid black;
+    display: grid;
+    background-color: rgb(235, 235, 235);
+    grid-template-columns: 84% 16%;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px;
+    height: 180px;
+    justify-items: end;
+}
+
+.content__item {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 15px;
+    background-color: rgb(189, 189, 189);
+}
+
+.content__item--large {
+    grid-row: span 2;
+    justify-self: end;
+    width: 14.8%;
+}
+
+.content__item--small {
+    justify-self: stretch;
+}
+
+.cont {
+    border: 2px solid black;
+    display: grid;
+    background-color: rgb(235, 235, 235);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px;
+    height: 180px;
+    justify-items: end;
+}
+
+.cont__item {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 15px;
+    background-color: rgb(189, 189, 189);
+}
+
+.cont__item--large {
+    grid-row: span 2;
+    justify-self: end;
+    width: 40%;
+}
+
+.cont__item--small {
+    justify-self: start;
+    width: 40%;
+}
